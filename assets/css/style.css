@@ -1,0 +1,54 @@
+/* Jai Shree Ram */
+
+@font-face {
+    font-family: lazyDog;
+    src: url(../fonts/lazy_dog/lazy_dog.ttf);
+}
+
+@font-face {
+    font-family: playWrite;
+    src: url(../fonts/playwrite_CU/PlaywriteCU-Regular.ttf);
+}
+
+*::selection{
+    background: #f2f2f23b;
+}
+
+.main{
+    background: center center no-repeat;
+    background-size: cover;
+    /* background-image: url(../img/bg/bg1.jpg); */
+}
+
+.overlay{
+    pointer-events: none;
+    background: radial-gradient(ellipse at center , transparent 50%, rgba(0, 0, 0, 0.539));
+}
+
+.time{
+    font-style: italic;
+}
+
+
+.day::before,
+.day::after{
+    content: '';
+    width: 33%;
+    height: 10%;
+    position: absolute;
+    background: #62f862;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #000;
+}
+
+.day::before{
+    left: 0;
+}
+
+.day::after{
+    right: 0;
+}
+
+.textShadow{
+    text-shadow: 0 10px 5px #000;
+}
